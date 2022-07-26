@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+  
   <script src="https://kit.fontawesome.com/e8702507db.js" crossorigin="anonymous"></script>
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -14,41 +26,41 @@
 
 <body>
     <!-- WEBSITE CONTAINER  -->
-  <div class="container">
-
+  <div class="container"></div>
+ 
     <!-- HEADER -->
-   <header>
+   <div class="header">
     <img src="./Assets/logo.png" alt="Xochimilco logo">
 
  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 
 <!-- Top Navigation Menu -->
-<div class="topnav">
+    <div class="topnav">
     <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="#">HOURS & LOCATION</a>
-    <a href="#">SPECIALS</a>
-    <a href="#">JOBS</a>
-    <a href="#">CONTACT</a>
-    <a href="#">ORDER NOW</a>
-    <a href="#">EMAIL SIGNUP</a>
-    <hr>
-    <i class="fa-brands fa-facebook"></i>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
 
-    </header>
-    </div>
+      <div id="myLinks">
+        <a href="#">HOURS & LOCATION</a>
+        <a href="#">SPECIALS</a>
+        <a href="#">JOBS</a>
+       <a href="#">CONTACT</a>
+       <a href="#">ORDER NOW</a>
+       <a href="#">EMAIL SIGNUP</a>
+       <hr>
+       <i class="fa-brands fa-facebook"></i>
+     </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+     </a>
+     </div>
+
+  </div>
+ </div>
 
 
     <!-- MAIN IMAGE -->
 
-    <img src="./Assets/heroimage1.png" class="img-fluid" alt="Responsive image">
-
+    <img src="assets/heroimage1.png" alt="tortilla chips with cheese">
 
     <!-- WELCOME -->
   <div id="welcome">
@@ -65,6 +77,11 @@
 
 
     <!-- FOOTER -->
+
+    <div class="footnav">
+      <a href="#home" class="active">ORDER NOW</a>
+      <a href="#news">EMAIL SIGNUP</a>
+    </div>
 
 
 
